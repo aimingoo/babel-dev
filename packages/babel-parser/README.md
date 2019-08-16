@@ -32,11 +32,8 @@ A JavaScript parser with private property support.
 
 Using npm:
 
-```sh
+```bash
 > npm install .
-
-# (OR)
-> npm install https://github.com/aimingoo/babel-dev/packages/babel-parser
 ```
 
 
