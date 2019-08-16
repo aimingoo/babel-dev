@@ -2,7 +2,7 @@
 
 A lite version babel for plugins/packages developer.
 
-> * A demo:
+> A demo:
 >    [https://github.com/aimingoo/babel-dev/packages/babel-parser](https://github.com/aimingoo/babel-dev/packages/babel-parser)
 
 
