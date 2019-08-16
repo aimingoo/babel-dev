@@ -40,5 +40,5 @@ Using npm:
 
 ## More information
 
-See website [@babel/parser](https://babeljs.io/docs/en/next/babel-parser.html) for more information or the [issues](https://github.com/babel/babel/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3A%22pkg%3A+parser+%28babylon%29%22+is%3Aopen) associated with this package.
+See website [@babel](https://babeljs.io/docs/en/next/babel-parser.html) for more information.
 
