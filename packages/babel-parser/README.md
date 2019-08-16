@@ -2,13 +2,17 @@
 
 A JavaScript parser with private property support.
 
+>
 >  *- support Class and ObjectLiteral*
+>
 >  *- support accessibilities: private, protected and public*
+>
 
 @babel/parser based.
 
 >
 > @see:
+>
 >  * [private-property proposal](https://github.com/aimingoo/private-property)
 >
 
@@ -34,6 +38,9 @@ Using npm:
 
 ```bash
 > npm install .
+
+# (OR, replace "${BABEL-DEV}" byself)
+> npm install ${BABEL-DEV}/packages/babel-parser
 ```
 
 
