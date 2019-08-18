@@ -94,7 +94,7 @@ console.log(obj.x); // nothing
 > cd -
 
 # test
-> node ./bin/parser.js test/features/private.js options/EnableClassProperties.json
+> node ./bin/babel-parser.js test/features/private.js options/EnableClassProperties.json
 ```
 
 ## Install
