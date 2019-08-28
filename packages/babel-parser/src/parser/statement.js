@@ -1333,9 +1333,22 @@ export default class StatementParser extends ExpressionParser {
     let isStatic = false;
     const containsEsc = this.state.containsEsc;
 
-    member.accessibility = this.parseAccessModifier();
+    // 'internal' is special name
+    if (this.match(tt.name) && (this.state.value == "internal")) {
+      if (this.parseTrySpecialClassMemberName(classBody, member, isStatic, containsEsc)) return; // finished
+      member.withInternal = true;
+    }
 
-    // eats special names
+    member.accessibility = this.parseAccessModifier();
+    const isPublic = !member.accessibility || (member.accessibility === "public");
+    if (member.withInternal && isPublic) {
+      this.raise(
+        key.start,
+        "Public member can not as internal.",
+      );
+    }
+
+    // other special names
     const specialNames = ["as", "static"];
     while (this.match(tt.name)) {
       let key = this.state.value;

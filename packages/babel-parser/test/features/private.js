@@ -15,13 +15,27 @@ class MyClass {
   private get x() {};
   private x() {};
 
+  // internal
+  internal private x;
+  internal private static x;
+  internal protected x;
+  internal protected static x;
+
   // public, protected and more
   public x;
   public as x;
   protected x = 100;
 
+  // special names
+  internal;
+  static;
+  as;
+  private internal;
+  private static;
+  private as;
+
   // computed name or value, for all accessibilities
-  private [a+b] = 100; // IdentiferName is result of a+b
+  private [a+b] = 100; // IdentiferName is result of a+b, maybe suppport
   private a = a+b; // value is a+b
 
   // normal style
